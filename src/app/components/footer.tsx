@@ -13,7 +13,7 @@ export default function Footer() {
           </Link>
           <p className="text-center text-sm leading-loose text-neutral-400 md:text-left">
             Built by{' '}
-            <Link href="https://twitter.com/yourusername" className="font-medium underline underline-offset-4">
+            <Link href="https://github.com/raulcanodev" className="font-medium underline underline-offset-4">
               @raulcanodev
             </Link>
             . Open source on{' '}
