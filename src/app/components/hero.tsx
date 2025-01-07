@@ -30,13 +30,13 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
+
       <Link
         href="https://github.com/raulcanodev/react-github-dots"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 rounded-lg border border-neutral-800 px-4 mt-8 py-2 text-sm font-medium text-neutral-400 hover:bg-neutral-800 transition-colors">
-        <Star className="h-4 w-4 text-emerald-500" />
+        className="group flex items-center gap-2 rounded-lg border border-neutral-800 px-4 mt-8 py-2 text-sm font-medium text-neutral-400 hover:bg-neutral-800 transition-colors">
+        <Star className="h-4 w-4 text-emerald-500 group-hover:fill-emerald-500 transition-colors" />
         Star on GitHub
       </Link>
     </section>
