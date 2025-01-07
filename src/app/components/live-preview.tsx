@@ -2,7 +2,7 @@
 import ContributionGraph from '@raulcanodev/react-github-dots'
 
 export default function LivePreview() {
-  const token = process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN
+  const token = process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN || '';
 
   return (
     <section className="container px-4 py-16">
