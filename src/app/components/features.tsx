@@ -1,37 +1,110 @@
-import { Paintbrush, Feather, Zap } from 'lucide-react'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 
-const features = [
-  {
-    icon: Paintbrush,
-    title: 'Customizable',
-    description: 'Easily customize colors, sizes, and styles to match your app\'s design.',
-  },
-  {
-    icon: Feather,
-    title: 'Lightweight',
-    description: 'Minimal dependencies and optimized performance for fast loading times.',
-  },
-  {
-    icon: Zap,
-    title: 'Optimized for React',
-    description: 'Built with React best practices for seamless integration into your projects.',
-  },
-]
 
 export default function Features() {
   return (
-    <section className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Key Features</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {features.map((feature, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
-            <feature.icon className="w-12 h-12 mx-auto mb-4 text-blue-500" />
-            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-            <p className="text-gray-600">{feature.description}</p>
-          </div>
-        ))}
+    <section className="container px-4 mt-16 mb-24 m-auto">
+    <div className="mx-auto max-w-3xl space-y-6">
+      <h2 className="text-3xl font-bold tracking-tight">Component Props</h2>
+      <div className="rounded-lg border border-neutral-800">
+        <Table>
+          <TableHeader>
+            <TableRow className="border-neutral-800 hover:bg-transparent">
+              <TableHead className="text-neutral-400">Prop</TableHead>
+              <TableHead className="text-neutral-400">Type</TableHead>
+              <TableHead className="text-neutral-400">Default</TableHead>
+              <TableHead className="text-neutral-400">
+                Description
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="border-neutral-800">
+              <TableCell className="font-medium text-emerald-400">
+                username
+              </TableCell>
+              <TableCell className="font-mono text-sm text-neutral-400">
+                string
+              </TableCell>
+              <TableCell className="text-neutral-400">required</TableCell>
+              <TableCell className="text-neutral-400">
+                Your GitHub username
+              </TableCell>
+            </TableRow>
+            <TableRow className="border-neutral-800">
+              <TableCell className="font-medium text-emerald-400">
+                token
+              </TableCell>
+              <TableCell className="font-mono text-sm text-neutral-400">
+                string
+              </TableCell>
+              <TableCell className="text-neutral-400">required</TableCell>
+              <TableCell className="text-neutral-400">
+                GitHub personal access token
+              </TableCell>
+            </TableRow>
+            <TableRow className="border-neutral-800">
+              <TableCell className="font-medium text-emerald-400">
+                theme
+              </TableCell>
+              <TableCell className="font-mono text-sm text-neutral-400">
+              &apos;light&apos; | &apos;dark&apos;
+              </TableCell>
+              <TableCell className="text-neutral-400">&apos;dark&apos;</TableCell>
+              <TableCell className="text-neutral-400">
+                Color theme of the graph
+              </TableCell>
+            </TableRow>
+            <TableRow className="border-neutral-800">
+              <TableCell className="font-medium text-emerald-400">
+                customColorScheme
+              </TableCell>
+              <TableCell className="font-mono text-sm text-neutral-400">
+                object
+              </TableCell>
+              <TableCell className="text-neutral-400">null</TableCell>
+              <TableCell className="text-neutral-400">
+                Custom colors for contribution levels (0-4)
+              </TableCell>
+            </TableRow>
+            <TableRow className="border-neutral-800">
+              <TableCell className="font-medium text-emerald-400">
+                cacheTime
+              </TableCell>
+              <TableCell className="font-mono text-sm text-neutral-400">
+                false | &apos;2h&apos; | &apos;8h&apos; | &apos;1d&apos;
+              </TableCell>
+              <TableCell className="text-neutral-400">
+                &apos;1d&apos;
+              </TableCell>
+              <TableCell className="text-neutral-400">
+                Duration to cache the GitHub data
+              </TableCell>
+            </TableRow>
+            <TableRow className="border-neutral-800">
+              <TableCell className="font-medium text-emerald-400">
+                loadingComponent
+              </TableCell>
+              <TableCell className="font-mono text-sm text-neutral-400">
+                ReactNode
+              </TableCell>
+              <TableCell className="text-neutral-400">null</TableCell>
+              <TableCell className="text-neutral-400">
+                Custom loading state component
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
-    </section>
+    </div>
+  </section>
   )
 }
 
