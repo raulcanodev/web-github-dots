@@ -5,17 +5,13 @@ export default function LivePreview() {
   const token = process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN || '';
 
   return (
-    <section className="container px-4 py-16">
+    <section className="container px-4 py-16 m-auto flex justify-center">
       <div className="space-y-6">
-        {/* <div className="rounded-lg border border-neutral-800 bg-black p-6"> */}
-          <div className="overflow-x-auto">
-            <ContributionGraph
-              username="raulcanodev"
-              theme="dark"
-              token={token}
-            />
-          </div>
-        {/* </div> */}
+          <ContributionGraph
+            username="raulcanodev"
+            theme="dark"
+            token={token}
+          />
         <p className="text-sm text-neutral-400">
           Live preview of the contribution graph component using real GitHub data.
         </p>
@@ -23,4 +19,3 @@ export default function LivePreview() {
     </section>
   )
 }
-
