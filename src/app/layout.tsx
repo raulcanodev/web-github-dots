@@ -1,8 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Bricolage_Grotesque } from 'next/font/google';
+import { Bricolage_Grotesque } from 'next/font/google'
+import Script from 'next/script'  // Add this import
 import Header from './components/header'
-import Footer  from './components/footer'
+import Footer from './components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,8 +29,11 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script 
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
 }
-
