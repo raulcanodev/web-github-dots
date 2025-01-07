@@ -16,3 +16,7 @@ body {
   background: hsl(160 84% 39% / 0.2);
 }
 
+/* Fonts */
+.font-bricolage {
+  font-family: var(--font-rum_raisin);
+}

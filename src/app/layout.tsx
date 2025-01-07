@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Bricolage_Grotesque } from 'next/font/google';
 import Header from './components/header'
 import Footer  from './components/footer'
 
@@ -10,6 +11,12 @@ export const metadata = {
   description: 'Easily embed GitHub contribution graphs in your apps.',
 }
 
+const bricolageFont = Bricolage_Grotesque({
+  subsets: ['latin'],
+  weight: '800',
+  variable: '--font-rum_raisin',
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -17,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} min-h-screen bg-black text-white antialiased`}>
+      <body className={`${inter.className} ${bricolageFont.variable} min-h-screen bg-black text-white antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4 md:flex-row md:gap-6">
           <Link href="/" className="flex items-center space-x-2">
             <Image src="/icon.svg" alt="Logo" width={32} height={32} />
-            <span className="font-semibold">react-github-dots</span>
+            <span className="font-semibold font-bricolage">Green Dots</span>
           </Link>
           <p className="text-center text-sm leading-loose text-neutral-400 md:text-left">
             Built by{' '}

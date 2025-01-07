@@ -56,12 +56,12 @@ export default function QuickStart() {
                 {`import ContributionGraph from '@raulcanodev/react-github-dots'
 
 export default function Example() {
-return (
-<ContributionGraph 
-  username="githubusername"
-  token=process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN
-/>
-)
+  return (
+    <ContributionGraph 
+      username="githubusername"
+      token=process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN
+    />
+  )
 }`}
               </code>
             </pre>

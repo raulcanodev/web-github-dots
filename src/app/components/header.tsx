@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/icon.svg" alt="Logo" width={32} height={32} />
-          <span className="text-lg font-semibold">Github Dots</span>
+          <span className="text-lg font-semibold font-bricolage">Green Dots</span>
         </Link>
         <nav className="flex items-center gap-6">
           <Link
