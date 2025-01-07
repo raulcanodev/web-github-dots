@@ -16,7 +16,7 @@ function CopyButton({ text }: { text: string }) {
     <Button
       size="icon"
       variant="ghost"
-      className="absolute right-4 top-4 hover:bg-neutral-800"
+      className="absolute right-2 top-2 sm:right-4 sm:top-4 hover:bg-neutral-800"
       onClick={copy}>
       {copied ? (
         <Check className="h-4 w-4 text-emerald-400" />
@@ -30,30 +30,30 @@ function CopyButton({ text }: { text: string }) {
 
 export default function QuickStart() {
   return (
-    <section className="container px-4 m-auto">
-    <div className="mx-auto max-w-3xl space-y-6">
-      <h2 className="text-3xl font-bold tracking-tight">Quick Start</h2>
-      <div className="space-y-8">
-        <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-neutral-200">
-            Installation
-          </h3>
-          <div className="relative">
-            <pre className="rounded-lg border border-neutral-800 bg-black p-4">
-              <code className="text-sm text-neutral-400">
-                npm install @raulcanodev/react-github-dots
-              </code>
-            </pre>
-            <CopyButton text="npm install @raulcanodev/react-github-dots" />
+    <section className="w-full px-4 md:container md:mx-auto">
+      <div className="mx-auto max-w-3xl space-y-6">
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Quick Start</h2>
+        <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-neutral-200">
+              Installation
+            </h3>
+            <div className="relative">
+              <pre className="overflow-x-auto rounded-lg border border-neutral-800 bg-black p-3 sm:p-4">
+                <code className="text-xs sm:text-sm text-neutral-400 whitespace-pre-wrap break-words">
+                  npm install @raulcanodev/react-github-dots
+                </code>
+              </pre>
+              <CopyButton text="npm install @raulcanodev/react-github-dots" />
+            </div>
           </div>
-        </div>
 
-        <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-neutral-200">Usage</h3>
-          <div className="relative">
-            <pre className="rounded-lg border border-neutral-800 bg-black p-4">
-              <code className="block text-sm text-neutral-400">
-                {`import ContributionGraph from '@raulcanodev/react-github-dots'
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-neutral-200">Usage</h3>
+            <div className="relative">
+              <pre className="overflow-x-auto rounded-lg border border-neutral-800 bg-black p-3 sm:p-4">
+                <code className="block text-xs sm:text-sm text-neutral-400 whitespace-pre-wrap break-words">
+                  {`import ContributionGraph from '@raulcanodev/react-github-dots'
 
 export default function Example() {
   return (
@@ -63,25 +63,24 @@ export default function Example() {
     />
   )
 }`}
-              </code>
-            </pre>
-            <CopyButton
-              text={`import ContributionGraph from '@raulcanodev/react-github-dots'
+                </code>
+              </pre>
+              <CopyButton
+                text={`import ContributionGraph from '@raulcanodev/react-github-dots'
 
 export default function Example() {
-return (
-<ContributionGraph 
-  username="githubusername"
-  token=process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN
-/>
-)
+  return (
+    <ContributionGraph 
+      username="githubusername"
+      token=process.env.NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN
+    />
+  )
 }`}
-            />
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  )
+    </section>
+  );
 }
-
