@@ -1,4 +1,5 @@
 'use client';
+
 import { Copy, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
@@ -78,6 +79,30 @@ export default function Example() {
 }`}
               />
             </div>
+          </div>
+
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-neutral-200">
+              Getting a GitHub Personal Access Token
+            </h3>
+            <ol className="list-decimal list-inside space-y-2 text-neutral-400">
+              <li>Go to GitHub Settings → Developer Settings → Personal Access Tokens → Fine-grained personal access tokens</li>
+              <li>Click &quot;Generate new token&quot;</li>
+              <li>Give your token a name and select the following scopes:
+                <ul className="list-disc list-inside ml-6 mt-2">
+                  <li>read:user</li>
+                  <li>repo</li>
+                </ul>
+              </li>
+              <li>Click &quot;Generate token&quot; and copy your new token</li>
+              <li>Create a <code className="px-1 py-0.5 text-xs bg-neutral-800 rounded">.env.local or .env</code> file in your project root and add:
+                <pre className="mt-2 overflow-x-auto rounded-lg border border-neutral-800 bg-black p-3">
+                  <code className="text-xs sm:text-sm text-neutral-400">
+                    NEXT_PUBLIC_GITHUB_PERSONAL_ACCESS_TOKEN=your_token_here
+                  </code>
+                </pre>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
