@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-800 bg-black/50 backdrop-blur-md">
-      <div className="container flex h-16 items-center justify-between px-4">
+      <div className="container flex mx-auto h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <div className="relative w-8 h-8">
             {!imageError ? (
