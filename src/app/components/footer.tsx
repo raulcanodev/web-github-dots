@@ -32,11 +32,19 @@ export default function Footer() {
           <p className="text-center text-sm leading-loose text-neutral-400 md:text-left">
             Built by{' '}
             <Link 
-              href="https://github.com/raulcanodev" 
+              href="https://raulcano.dev" 
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium underline underline-offset-4 hover:text-white">
-              @raulcanodev
+              Raúl Cano
+            </Link>
+            {' '}at{' '}
+            <Link 
+              href="https://zenex.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline underline-offset-4 hover:text-white">
+              Zenex
             </Link>
             . Open source on{' '}
             <Link
