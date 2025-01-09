@@ -38,14 +38,14 @@ export default function Footer() {
               className="font-medium underline underline-offset-4 hover:text-white">
               Raúl Cano
             </Link>
-            {' '}at{' '}
+            {/* {' '}at{' '}
             <Link 
               href="https://zenex.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium underline underline-offset-4 hover:text-white">
               Zenex
-            </Link>
+            </Link> */}
             . Open source on{' '}
             <Link
               href="https://github.com/raulcanodev/react-github-dots"
