@@ -1,9 +1,27 @@
 import Link from 'next/link';
 import { Zap, Star } from 'lucide-react';
+import Image from "next/image"
 
 export default function Hero() {
   return (
     <section className="container flex flex-col items-center text-center px-4 pt-20 sm:pt-32 m-auto">
+<a 
+  href="https://www.producthunt.com/posts/green-dots?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-green&#0045;dots" 
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Image 
+    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=776583&theme=light&t=1736697060428" 
+    alt="Green Dots - GitHub-style contribution graphs for your React projects | Product Hunt" 
+    style={{
+      width: '250px',
+      height: '54px'
+    }}
+    width={250}
+    height={54}
+    className='mb-8'
+  />
+</a>
       <div className="mb-6 sm:mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 sm:px-4 py-1 text-xs sm:text-sm text-emerald-300">
         <Zap className="h-3 w-3 sm:h-4 sm:w-4" />
         🎉 Just launched: v1.1 is here
