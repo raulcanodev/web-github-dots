@@ -11,8 +11,8 @@ export default function Hero() {
   rel="noopener noreferrer"
 >
   <Image 
-    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=776583&theme=light&t=1736697060428" 
-    alt="Green Dots - GitHub-style contribution graphs for your React projects | Product Hunt" 
+    src="/peerlist.svg" 
+    alt="Green Dots - GitHub-style contribution graphs for your React projects" 
     style={{
       width: '250px',
       height: '54px'
