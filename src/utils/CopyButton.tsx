@@ -16,7 +16,7 @@ export default function CopyButton({ text }: { text: string }) {
     <Button
       size="icon"
       variant="ghost"
-      className="absolute right-4 top-4 hover:bg-neutral-800"
+      className=" hover:bg-neutral-800"
       onClick={copy}>
       {copied ? (
         <Check className="h-4 w-4 text-emerald-400" />
