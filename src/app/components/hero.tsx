@@ -1,27 +1,28 @@
 import Link from 'next/link';
 import { Zap, Star } from 'lucide-react';
 import Image from "next/image"
+import CopyButton from '@/utils/CopyButton';
 
 export default function Hero() {
   return (
     <section className="container flex flex-col items-center text-center px-4 pt-20 sm:pt-32 m-auto">
-<a 
-  href="https://www.producthunt.com/posts/green-dots?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-green&#0045;dots" 
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Image 
-    src="/peerlist.svg" 
-    alt="Green Dots - GitHub-style contribution graphs for your React projects" 
-    style={{
-      width: '250px',
-      height: '54px'
-    }}
-    width={250}
-    height={54}
-    className='mb-8'
-  />
-</a>
+      <a
+        href="https://www.producthunt.com/posts/green-dots?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-green&#0045;dots"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src="/peerlist.svg"
+          alt="Green Dots - GitHub-style contribution graphs for your React projects"
+          style={{
+            width: '250px',
+            height: '54px'
+          }}
+          width={250}
+          height={54}
+          className='mb-8'
+        />
+      </a>
       <div className="mb-6 sm:mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 sm:px-4 py-1 text-xs sm:text-sm text-emerald-300">
         <Zap className="h-3 w-3 sm:h-4 sm:w-4" />
         🎉 Just launched: v1.1 is here
@@ -42,8 +43,9 @@ export default function Hero() {
 
       <div className="w-full max-w-full sm:max-w-xl mx-auto overflow-hidden">
         <div className="mt-6 sm:mt-8 flex items-center justify-center">
-          <div className="rounded-lg border border-neutral-800 bg-black px-3 sm:px-4 py-2 font-mono text-xs sm:text-sm text-neutral-400 overflow-x-auto whitespace-nowrap">
-            npm i @raulcanodev/react-github-dots
+          <div className=" flex items-center gap-2 rounded-lg border border-neutral-800 bg-black px-3 sm:px-4 py-2 font-mono text-xs sm:text-sm text-neutral-400 overflow-x-auto whitespace-nowrap">
+            <span>npm i @raulcanodev/react-github-dots</span>
+            <CopyButton text={"npm i @raulcanodev/react-github-dots"} />
           </div>
         </div>
       </div>
