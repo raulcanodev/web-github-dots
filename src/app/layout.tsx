@@ -29,9 +29,11 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer /> 
+
         <Script 
-          src="https://scripts.simpleanalyticscdn.com/latest.js"
+          src="https://umami.zenex.dev/script.js"
           strategy="afterInteractive"
+          data-website-id="45e542fd-0317-4499-b712-42749694cbd9"
         />
       </body>
     </html>
