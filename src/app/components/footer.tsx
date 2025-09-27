@@ -73,6 +73,13 @@ export default function Footer() {
             className="text-neutral-400 hover:text-white">
             <Twitter className="h-5 w-5" />
           </Link>
+          <Link 
+            href="https://blogteca.com" 
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="text-neutral-400 hover:text-white text-sm font-medium">
+            Blogteca
+          </Link>
         </div>
       </div>
     </footer>
